@@ -1,0 +1,13 @@
+{
+  "name": "virtual-ripred",
+  "version": "1.0.0",
+  "description": "TUC Tumblr Alerts",
+  "main": "bot.js",
+  "author": "DrBracewell",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "discord.js": "^11.5.0",
+    "tumblr.js": "^2.0.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
