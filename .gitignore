@@ -1,8 +1,0 @@
-imgs
-
-node_modules
-
-json/tokens.json
-
-.gitignore
-server-push
