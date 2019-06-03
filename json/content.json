@@ -1,0 +1,424 @@
+{
+    "misc": {
+        "prefix": "vr!",
+        "pickups": [
+            "I hope you’ve got a bat, because I’m falling for you.",
+            "Are you one of the currents? Because you’re blowing me away.",
+            "Is a bat nearby or is that just my heart taking off?",
+            "Are you a shiner? Because you’re glowing.",
+            "Life without you in it would be like a broken sword. Pointless.",
+            "Why do you need a bond? I thought angels already had wings.",
+            "You belong in the Museum. You’re clearly an Overland work of art.",
+            "Are you a spinner? Because I feel caught in your web.",
+            "Are you volcanic ash? Because you take my breath away.",
+            "Did the sun come down to the Underland or did you just smile?",
+            "If kisses were water drops, I’d send you to the Waterway.",
+            "I hope I don’t have to die to earn a place in YOUR heart.",
+            "You can fall down an air vent, you can fall into the Waterway, but the best way to fall is in love with me.",
+            "Are you a shiner? Because you just made my heart light up.",
+            "Are you a volcano? Because your beauty sure does flow hot and bright.",
+            "Is your bond tired from flying you through my dreams all night?",
+            "I’m like shrimp in cream sauce; I may not look that good but I taste great.",
+            "[Looking at you] And I thought the jungle was hot.",
+            "There’s a prophecy that says we’re destined to make out.",
+            "You know what else Sandwich saw in his visions? You in my bed.",
+            "I’m no Nibbler, but I’m pretty good with numbers. Tell you what, give me yours and watch what I can do with it.",
+            "I’ll turn and turn and turn you again.",
+            "Let’s twirl tongues.",
+            "I’ll give you ten reasons to wiggle your toes.",
+            "I was looking at a shiner today and its light made me think of you.",
+            "I am (s)he who calls. I'm gonna need your number first though",
+            "Are you a bat? Because you're purrfect.",
+            "No wonder we never seen the sky in these caves, it has always been hiding in your eyes.",
+            "You are my own personal light.",
+            "Let’s go bond somewhere on our own.",
+            "Is your last name Campbell? Cause you’re “mmmm… good!”",
+            "Did it hurt when you fell from the Overland?",
+            "It's not my fault that I fell for you, you pushed me off my bat!",
+            "Is it bright out here or is that just your light?",
+            "Have you read Sandwich's prophecies? Because he told of the two of us in them all.",
+            "Hey, hold onto your bond! I don’t want you falling for anyone else.",
+            "You know what material this is? [Grabs your shirt] Bond material.",
+            "I didn’t really believe in love at first flight, until I saw you.",
+            "Do you have a band aid? Cause I scraped my knees falling to the Underland for you.",
+            "When I look into your eyes, it is like a gateway into the Underland, which is where I want to be.",
+            "If you can fly, you have my hand, but if you can fight, you have my heart.",
+            "I lost my rubber duckie. Would you help me bathe the Overlander stench off instead?",
+            "Most people like to watch the bond games in the arena because they’re the only live entertainment, but I’d rather talk to you cause the chance of meeting someone like you only happens once in a lifetime",
+            "Your eyes are blue, like the Waterway. And baby, I’m lost at sea."
+        ],
+        "prophecies": {
+            "gray": "The Prophecy of Gray:\n\nBeware, Underlanders, time hangs by a thread.\nThe hunters are hunted, white water runs red.\nThe gnawers will strike to extinguish the rest.\nThe hope of the hopeless resides in a quest.\n\nAn Overland warrior, a son of the sun,\nMay bring us back light, he may bring us back none.\nBut gather your neighbors and follow his call\nOr rats will most surely devour us all.\n\nTwo over, two under, of royal descent,\nTwo flyers, two crawlers, two spinners assent.\nOne gnawer beside and one lost up ahead.\nAnd eight will be left when we count up the dead.\n\nThe last who will die must decide where he stands.\nThe fate of the eight is contained in his hands.\nSo bid him take care, bid him look where he leaps,\nAs life may be death and death life again reaps.\n",
+            "bane": "The Prophecy of Bane:\n\nIf Under fell, if Over leaped,\nIf life was death, if death life reaped,\nSomething rises from the gloom\nTo make the Underland a tomb.\n\nHear it scratching down below,\nRat of long forgotten snow,\nEvil cloaked in coat of white\nWill the warrior drain your light?\n\nWhat will turn the warrior weak?\nWhat do burning Gnawers seek?\nJust a barely speaking pup\nWho holds the land of Under up.\n\nDie the baby die his heart,\nDie his most essential part.\nDie the peace that rules the hour.\nGnawers have their key to power.\n",
+            "blood": "The Prophecy of Blood:\n\nWarmblood now a bloodborne death\nWill rob your body of its breath,\nMark your skin, and seal your fate.\nThe Underland becomes a plate.\n\nTurn and turn and turn again.\nYou see the what but not the when.\nRemedy and wrong entwine,\nAnd so they form a single vine.\n\nBring the warrior from above\nIf yet his heart is swayed by love.\nBring the princess or despair,\nNo crawlers care without her there.\n\nTurn and turn and turn again.\nYou see the what but not the when.\nRemedy and wrong entwine,\nAnd so they form a single vine.\n\nThose whose blood runs red and hot\nMust join to seek the healing spot.\nIn the cradle find the cure\nFor that which makes the blood impure.\n\nTurn and turn and turn again.\nYou see the what but not the when.\nRemedy and wrong entwine,\nAnd so they form a single vine.\n\nGnawer, human, set aside\nThe hatreds that reside inside.\nIf the flames of war are fanned,\nAll warmbloods lose the Underland.\n\nTurn and turn and turn again.\nYou see the what but not the when.\nRemedy and wrong entwine,\nAnd so they form a single vine.",
+            "secrets": "The Prophecy of Secrets:\n\nDancing in the firelight,\nSee the queen that conquers night.\nGold flows from her, hot and bright.\nFather, mother, sister, brother,\nOff they go. I do not know\nIf we will see another.\n\nCatch the nibblers in a trap.\nWatch the nibblers spin and snap.\nQuiet while they take a nap.\nFather, mother, sister, brother,\nOff they go. I do not know\nIf we will see another.\n\nNow the guests are at our door\nGreet them as we have before.\nSome will slice and some will pour.\nFather, mother, sister, brother,\nOff they go. I do not know\nIf we will see another.",
+            "time": "The Prophecy of Time:\n\nThe war has been declared,\nYour ally been ensnared.\nIt is now or it is never.\nBreak the code or die forever.\n\nTime is running out\nRunning out\nRunning out.\n\nTo the warrior give my blade.\nBy his hand your fate is made.\nBut do not forget the ticking\nOr the clicking, clicking, clicking.\nWhile a rat's tongue may be flicking,\nWith it's feet it does the tricking.\nFor the paw and not the jaw\nMake the Code of Claw.\n\nTime is standing still\nStanding still\nStanding still.\n\nSince the princess is the key\nTo unlock the treachery,\nShe cannot avoid the matching\nOr the scratching, scratching, scratching.\nWhen a secret plot is hatching,\nIn the naming is the catching.\nWhat she saw, it is the flaw\nOf the Code of Claw.\n\nTime is turning back\nTurning back\nTurning back.\n\nWhen the monster's blood is spilled,\nWhen the warrior has been killed,\nYou must not ignore the rapping,\nOr the tapping, tapping, tapping.\nIf a gnawer finds you napping,\nYou will rot while they are mapping\nOut the law of those who gnaw\nIn the Code of Claw.",
+            "peacemaker": "The Peacemaker:\n\nOn soft feet, by none detected,\nDealing death, by most rejected,\nKilled by claw, since resurrected,\nMarked by X, two lines connected.\nFinally, they intersected,\nTwo lines met, one unexpected."
+        },
+        "wDD": [
+            "421", 
+            "4.21", 
+            "4/21"
+        ],
+        "blogs": [
+            "runlikethemotherfuckingriver",
+            "oneunexpected",
+            "underlinedchronicles",
+            "the-what-but-not-the-when"
+        ],
+        "channels": [
+            "557277388296421408",
+            "545677818780975104",
+            "574977350240829462"
+        ],
+
+        "vines": [
+            "Nerissa: Luxa, do you want to talk about your feelings?\nLuxa: No.\nVikus: I do.\nNerissa: I know, Vikus.\nVikus: I’m sad.\nNerissa: I know, Vikus.",
+            "Gregor, trying to get his dad to recognize him in the rat pit: You are my da-ad! YOU’RE MY DAD! Boogie woogie woogie!",
+            "Gregor, circa Code of Claw: We all die, you either kill your self or get killed. Watcha gonna do, whatcha gonna do?",
+            "Ripred: Hey everybody today my Pearlpelt pushed me so I’ve started a GoFundMe to put him down. The benefits of killing him would be I would get pushed less.",
+            "Henry: On all levels except physical, I am a rat. *rat noises*",
+            "Boots: Look it! It’s frickin bats. I love the Underland",
+            "Luxa, letting Gregor drown in quicksand: I SAW YOU HANGING OUT WITH RIPRED TODAY!\nGregor: Lux-Luxa, it’s not what you think!\nLuxa: I WON’T HESITATE BITCH!",
+            "Judith, observing Hamnet and Mareth: Two Bros, chilling in the hot spring, five feet apart because they’re not gay.",
+            "Henry upon first meeting Ripred: AAAAHHH! HAAAAAAAAAAAAAAA! AAH!\nRipred: Why are you running? WHY are you running?",
+            "Solovet: I don’t care about my haters, and if you wanna fight me, then fight me.",
+            "A digger: I do exist... So fuck you.",
+            "Luxa: This is how I enter my house. WHAT’S UP, FUCKERS?\nThe Council: Why do you have a sword?\nLuxa: FUCK YOU, THAT’S WHY!",
+            "Henry: So basically, um, what I was thinking of was, umm...\nAres: *Lets him fall to his death.*\nHenry: Aw, fuck, I can’t believe you’ve done this.",
+            "Aurora, watching Gregor and Luxa: What the fuck. Is this allowed? What the fuck! Is that allowed?!\nLuxa: Stop.",
+            "Aurora, talking to Nike: And they were roommates!\nAres, overhearing: Oh my God they were roommates.",
+            "Gregor: Back at it again at the Krispy Kreme.\n*Cut to Luxa doing a bunch of flips, knocking a sign out.*",
+            "Ripred, looking worried, heavy metal playing in the background: Hey Pearlie, Razor’s here.\nThe Bane: FUCK RAZOR!\nRipred: Haah I’m sorry Pearlie!",
+            "Hazard: So you just gonna bring me a birthday gift on my birthday to my birthday party on my birthday with a birthday gift?",
+            "Gregor: WHAT ARE THOOOOSE!?\nMrs. Cormaci: They are my crocs.",
+            "Everyone to Twirltongue: When I leave, you wanna keep doing this *talking gesture* but then when I come around, you don’t wanna, post up.",
+            "Gregor, seeing the Swag for the first time: Road Work Ahead? Uh, yeah, I sure HOPE it does...",
+            "Crawlers at the bottom of the chute when Gregor lands: Hhhhiiii, welcome to Chili’s!",
+            "Gregor handing the nearly-finished wineskin of shrimp to Ripred: Hey Tara, you want some?\nRipred: This bitch EMPTY! YEET!!!",
+            "Vikus, enthusiastically reading an old newspaper from the museum to Gregor: Get to Del Taco! They have this new thing called freesha–? free–? FREE SHAVACADOOOOO!",
+            "Gregor looking at the Starshade field: Dad look, it’s the good kush!\nRipred: This is the dollar store… how good can it be?",
+            "Frill: You got this, Travis! Make ‘em wait for it...\nFrill flares out her beautiful neck: ...Boom!",
+            "Gregor to Ripred with Pearlpelt: Is that the baby? Be nice to the baby, Charlie- AH! CHARLIE!",
+            "Hamnet, leaving Regalia for the wilderness: Fuck this shit I’m out!",
+            "Luxa teaching Gregor about Bonds: Don’t tell your mother...\nAurora: Kiss one another!\nAurora and Luxa together: DIE FOR EACH OTHER!\nGregor: *Looks on in horror.*",
+            "Literally any Regalian tasked with obtaining batteries from the museum: aa… aaa… AAAA!",
+            "Hazard: ...\nHamnet: Where’s the lizard?\nHazard: ...",
+            "Literally everyone getting read to send lizzie off to camp: Oooh my boy Kenneth going fuck it up.",
+            "Boots: Look at all those chickens!",
+            "Hamnet introducing Hazard: Next is Nathan he imitating a sinking water engine.",
+            "Gregor: Smack cam!\nRipred: Bitch I hope the fuck you do, you’ll be a dead son of a bitch, I’ll tell you that!",
+            "Gregor: People are always asking me, what’s it like to be a Rager?\nGregor: *Slips on chair, falls and hits his head*",
+            "The Bane, to Ripred: You’re not my dad! Ugly ass motherfucker...",
+            "Vikus to Solovet: I love you bitch, I ain’t gonna never stop loving you, BITCH!",
+            "Luxa: I’m a bad bitch, you can’t kill me!",
+            "Gregor: Ares? Ares? Oh my fucking god he’s fucking dead!",
+            "The Bane: *Kills one of his babysitters.* You’re next!\nRipred: What are you doing? Why would you kill him like that?",
+            "Howard, sewing Luxa and Gregor on their “date”: What the fuck… is this allowed? What the fuck, is that allowed?!\nLuxa: Stop.",
+            "Howard: Hey everyone, this is my girlfriend!\nLuxa: I’m your cousin.\nHoward: Shhhh just go with it.\nLuxa: What the fuck?",
+            "Gregor: About to draw something for oots with a crayon.\nLuxa: OH MY GOD Gregor is that Starshade?\nGregor: No this is a crayon.\nLuxa: I'M CALLING THE GUARDS!",
+            "Gregor: *Sees Ripred for the first time*.\nGregor: Well hello Mr. Kitty.\nGregor: Can I pet ze kitty?\nGregor: No where are you going?\nGregor: NO KITTY COME BACK!",
+            "Ripred (about Boots): This baby is fucking useless. She can’t do shit.\nGregor: What do you need her to do?\nRipred: I need her to do a backflip.",
+            "Gregor:Is relaxing\nLuxa: Creeps up next to him and swings her sword just above him.\nGregor: THIS IS WHY VIKUS DOESNT FUCKING LOVE YOU",
+            "Mareth: Hey, Gregor, can you read number 33 for the class?\nGregor: No I can not.\nGregor: Whatup I’m Gregor I’m 19 and I never fucking learned how to read.",
+            "Ripred: Would you like a spider in your hand?\nLizzie: Yeah!\nRipred: Say please!\nLizzie: Please!\nRipred: *Dumps a 10ft spinner in her hand*\nLizzie: AHHHH-",
+            "Gregor to the council: Everyone excuse my potty mouth, but... *Screams at Solovet.* SHUT THE FUCK UP!",
+            "Vikus: Okay let’s go over your will. It says here you want to be mummified in fruit roll-ups?\n*Pause*\nGregor: Uh huh"
+        ]
+    },
+    "profiles": [
+        {
+            "name": "Jexus",
+            "species": "Flier",
+            "age": "29",
+            "bond": "Onora",
+            "SO": "Demeter",
+            "about": "Jexus is large dark red bat with orange swirls on his body. He used to work a soldier in the Regalian army, but was recently promoted and now he is essentially in charge of the army. He is bonded to Onora, and is in a relationship with Demeter. He is missing one eye from when he was attacked by a gnawer.",
+            "reference": {
+                "link": "https://imgur.com/EsRBOv7.png",
+                "author": "Wolf"
+            }
+        },
+        {
+            "name": "Genor",
+            "species": "Overlander",
+            "age": "16",
+            "bond": "N/A",
+            "SO": "Sky",
+            "about": "Genor is a 5”11 male. He has a slight build, scars running across his body. He has a rather deep scar on his stomach from where he was stabbed by Nexo. He generally wears glasses to hide his pupil-less glass eyes that he wears as a replacement since Nexo stabbed them out. He uses daggers and (sometimes) short swords in battle, which he uses very well thanks to his abilities as a rager.",
+            "reference": {
+                "link": "https://imgur.com/isISj5w.png",
+                "author": "Presly"
+            }
+        },
+        {
+            "name": "Howard",
+            "species": "Underlander",
+            "age": "20",
+            "bond": "Nike",
+            "SO": "Onora",
+            "about": "Howard is a tall, strong Underlander. He is Queen Luxa's cousin and works in the hospital as a medic. He is bonded to Nike, and in a relationship with Onora. He is always willing to be a shoulder to cry on for any of his friends.",
+            "reference": {
+                "link": "https://imgur.com/9nJ32T3.jpg",
+                "author": "Gregor the Overland facebook page"
+            }
+        },
+        {
+            "name": "Michael",
+            "species": "Overlander",
+            "age": "13",
+            "bond": "Demeter",
+            "SO": "N/A",
+            "about": "Michael is a very scrawny, smaller than average child who recently fell into the Underland. He decided to live down there and is still adjusting to it. He doesn't enjoy fighting, but he isn't too bad at it. He can run fast, but he has extremely poor stamina.",
+            "reference": {
+                "link": "https://imgur.com/89g6QY9.png",
+                "author": "Presly"
+            }
+        },
+        {
+            "name": "Onora",
+            "species": "Halflander",
+            "age": "17",
+            "bond": "Jexus",
+            "SO": "Howard",
+            "about": "Onora has a fairly small body frame, but has an hourglass type body shape that shows off her distinct curves. She is 5’5. She has darkish skin with freckles that go across her face. Her eyes are a light violet color since she is a halflander. Onora now has a metal prosthetic on her right leg because of an accident. Her hair is long and very curly. It is often messy too. Her hair color is just a plain black. Onora gets scared in almost any life or death situation, and starts to freak out. If someone dies or something happens to them, she thinks it’s her fault. She is actually sweet, and caring about those around her. No one gets left behind when she’s around. Onora will speak for something she believes in though, causing her to be hotheaded. Onora will hold a grudge, only if she thinks it is necessary.",
+            "reference": {
+                "link": "https://imgur.com/SPTnLxO.jpg",
+                "author": "Hollo.231"
+            }
+        },
+        {
+            "name": "Nike",
+            "species": "Flier",
+            "age": "Unknown, somewhere between 20-30",
+            "bond": "Howard",
+            "SO": "N/A",
+            "about": "Nike is a fairly small bat. Her fur has splotches of black and white, and has dark brown eyes. Her wingspan is a little bit bigger, as it is around 5’7. Nike has a very sweet personality. She cares for lots of people, but will worry the most about her bond. Nike doesn’t get angered very easily, but when she does she tries her best not to show it to others. Nike is the daughter to Queen Athena of the fliers.",
+            "reference": {
+                "link": "https://imgur.com/0xAotYm.png",
+                "author": "No One"
+            }
+        },
+        {
+            "name": "Demeter",
+            "species": "Flier",
+            "age": "Young adult.",
+            "bond": "Michael",
+            "SO": "Jexus",
+            "about": "Demeter is a slightly smaller than average bat, with light brown, fluffy fur. Her eyes are also brown. She’s very optimistic and caring, often referred to as the ‘mom of the group.",
+            "reference": {
+                "link": "https://imgur.com/a7weaWD.png",
+                "author": "Wolf"
+            }
+        },
+        {
+            "name": "Smokeswirl",
+            "species": "Gnawer",
+            "age": "Young adult.",
+            "bond": "N/A",
+            "SO": "Shredder",
+            "about": "Smokeswirl is a smokey shade of grey with yellow eyes. She’s covered in a myriad of scars. She is also missing her hind leg. She’s fairly sarcastic and grumpy, however, she’s come a long way from how she was in the beginning, when she despised every single human.",
+            "reference": {
+                "link": "https://imgur.com/B3l2hnx.png",
+                "author": "Wolf"
+            }
+        },
+        {
+            "name": "Helen",
+            "species": "Underlander",
+            "age": "16",
+            "bond": "N/A",
+            "SO": "N/A",
+            "about": "Helen is 4’11 and appears fairly scrawny. She has typical pale skin, violet eyes, and light hair which she has cut very short. She’s a soldier in the Regalian army, but doesn’t have very many friends. She’s very talented with a sword, and can run quickly. She is also openly gay.",
+            "reference": {
+                "link": "https://imgur.com/BwX99En.png",
+                "author": "Wolf"
+            }
+        }
+    ],
+
+    "quotes": {
+        "ripred": [
+            "“Quite the contrary. I was going to say that life is short. There are only a few good things in it, really. Don't pretend that one isn't happening.”",
+            "“Yes, I’m a mouse. Squeak, squeak. Now shoo-shoo back to your little bug friends.”",
+            "“Oh, yes, oh, my word,” he raved as he chewed and swallowed. “I'm absolutely stuffed!”",
+            "“Oh, dear. Is this where we fight to the death? I didn’t expect it so soon.”",
+            "“Well, I prefer to think of myself as a legend, but I suppose 'guide' will do.”",
+            "“Yes, stay you or I shall be forced to move, and that always puts me in an ill humor.”",
+            "“Do rats love?” asked Gregor wryly. “Oh, yes”, said Ripred with a smirk. “We love ourselves very much.”",
+            "“Remember, Gregor, the prophecy calls for only four of the twelve to die. Think we can take them, you and I?”",
+            "“Perhaps we leave the gnawer dead beside us.” said Henry. “Perhaps you do, but having witnessed your last attack I doubt it.” the rat replied.",
+            "“Nerrissa? You believe her? Well, you at least have to credit her with a certain instability! Remember when she told you that I was going to take over the Fount with and army of Lobsters?” said Ripred. “You did try to take over the Fount with an army of Lobsters.” said Vikus. “Yes, yes, but it was years before she was born. My point is, she flip-flops in and out of time like a fish in shallow waters.” answered Ripred.",
+            "“I start to crack at four hundred to one.”",
+            "“What's your plan?”",
+            "“Nobody's going around calling me a prince.” said Gregor. “Well if that's what's bothering you you'll be Prince Gregor from now on.” Ripred replied"
+        ],
+        "gregor": [
+            "“It's going to be okay, Gregor. You don't think so now. You don't see how it could ever be. But one day, I promise, it's going to be okay.”",
+            "“Great, Day One and I'm looking forward to a trip to the laundry room. By September I'll probably be ecstatic when we get the phone bill.”",
+            "Whites, darks, colors... what was he supposed to do with Boots's black-and-white-striped shorts? He tossed them in the darks feeling sure it was the wrong decision."
+        ],
+        "boots": [
+            "“Hi, you!”",
+            "“Beeg Bug!”",
+            "“I poop!”",
+            "“Ge-go!",
+            "“I pincess!”"
+        ],
+        "luxa": [
+            "“You see, I tired of constant fear, so I made a decision. Every day when I wake I tell myself that it will be my last. If you are not trying to hold on to time, you are not so afraid of losing it.”",
+            "The upside-down girl released her legs and dropped off the bat's back. She executed a perfect  double back-flip, twisting around at the last moment to face Gregor's direction, and landed on the ground as lightly as a cat in front of Boots. One hand went out, and the ball fell into it in what was either a feat of remarkable timing or incredible luck.\nGregor looked at the girl's face and could tell by her arrogant expression that there had been no luck involved at all."
+        ],
+        "general": [
+            "[Gregor's Grandmother] One minute she was clear as a bell and the next she was calling him Simon. Who was Simon? He had no idea.",
+            "[Gregor's Grandmother] “A root beer? What is it, my birthday?”\n“How could you answer something like that?”, Gregor thought."
+        ]
+    },
+
+    "trivia": [
+        {
+            "question": "How old is Gregor at the start of the books?",
+            "answers": [
+                "11.",
+                "10.",
+                "12.",
+                "15."
+            ]
+        },
+        {
+            "question": "How did Twitchtip die?",
+            "answers": [
+                "She was imprisoned in a pit and left to die.",
+                "She was killed by Twirltongue.",
+                "She starved to death in The Labryinth.",
+                "Luxa killed her out of mercy."
+            ]
+        },
+        {
+            "question": "What is Gregor's last name?",
+            "answers": [
+                "It is not mentioned",
+                "Campbell",
+                "Wilson.",
+                "Carter."
+            ]
+        },
+        {
+            "question": "What does Gregor's Grandma sometimes call him?",
+            "answers": [
+                "Simon.",
+                "Boy.",
+                "George.",
+                "Alex."
+            ]
+        },
+        {
+            "question": "What were Lapblood's pups called?",
+            "answers": [
+                "Sixclaw and Flyfur.",
+                "Shed and Fangor.",
+                "Riptide and Makemince.",
+                "Goldshard and Ratriff."
+            ]
+        },
+        {
+            "question": "In which books is Ripred *not* featured in the main quest?",
+            "answers": [
+                "Only Prophecy of Bane.",
+                "Gregor the Overlander and Curse of the Warmbloods.",
+                "Prophecy of Bane, Code of Claw and Mark of Secrets.",
+                "Curse of the Warmbloods and Prophecy of Bane."
+            ]
+        },
+        {
+            "question": "How long has it been since Gregor's father disappeared in Gregor the Overlander?",
+            "answers": [
+                "2 years, 7 months and 13 days.",
+                "2 years, 3 months and 14 days.",
+                "1 year, 9 months.",
+                "3 years, 11 months, 6 days and... 17 hours."
+            ]
+        },
+        {
+            "question": "What is Vikus' bond called?",
+            "answers": [
+                "Euripedes.",
+                "Ajax",
+                "Artemis.",
+                "Hermes."
+            ]
+        },
+        {
+            "question": "Roughly how long before the series did Mr. Cormaci die?",
+            "answers": [
+                "5 years.",
+                "12 years.",
+                "A couple years.",
+                "9 months."
+            ]
+        },
+        {
+            "question": "Who was the last Overlander to fall before Gregor/Boots?",
+            "answers": [
+                "Coco.",
+                "Fred.",
+                "Mickey.",
+                "Larry."
+            ]
+        },
+        {
+            "question": "Which one of these is one of Howard's siblings?",
+            "answers": [
+                "Hero.",
+                "Claudius.",
+                "Daphne",
+                "Keeda."
+            ]
+        },
+        {
+            "question": "Who is *not* one of the Code Breakers?",
+            "answers": [
+                "Icarus.",
+                "Daedalus.",
+                "Heronian.",
+                "Reflex."
+            ]
+        },
+        {
+            "question": "What is the name of the person Gregor sells antiques from the museum to?",
+            "answers": [
+                "Mr. Otts",
+                "Ms. Wilkson",
+                "George.",
+                "Mr. Clyde."
+            ]
+        },
+        {
+            "question": "Which one of these lines is *not* from a prophecy?",
+            "answers": [
+                "And his blood shall give us the light.",
+                "But gather your neighbors and follow his call",
+                "When a secret plot is hatching,",
+                "The hatreds that reside inside."
+            ]
+        },
+        {
+            "question": "How many prophecies mention the Bane?",
+            "answers": [
+                "3.",
+                "2.",
+                "1.",
+                "4."
+            ]
+        },
+        {
+            "question": "Where did Aurora get hurt after fighting the rats in Gregor the Overlander?",
+            "answers": [
+                "Her left wing.",
+                "Her right wing.",
+                "Her left leg.",
+                "Her head."
+            ]
+        }
+    ]
+}
