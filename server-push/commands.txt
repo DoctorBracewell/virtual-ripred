@@ -1,7 +1,0 @@
-cd /projects/virtual-ripred
-put ../virtualRipred.js
-cd json
-put ../json/content.json
-put ../json/tokens.json
-put ../json/commands.json
-quit
