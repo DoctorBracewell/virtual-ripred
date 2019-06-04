@@ -1,13 +1,25 @@
 {
   "name": "virtual-ripred",
   "version": "1.0.0",
-  "description": "TUC Tumblr Alerts",
-  "main": "bot.js",
-  "author": "DrBracewell",
+  "description": "Source code for custom discord.js bot Virtual Ripred",
+  "main": "virtualRipred.js",
   "dependencies": {
-    "axios": "^0.18.0",
-    "discord.js": "^11.5.0",
-    "tumblr.js": "^2.0.2",
-    "xmlhttprequest": "^1.8.0"
-  }
+    "axios": "^0.19.0",
+    "discord.js": "^11.5.1",
+    "tumblr.js": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoctorBracewell/virtual-ripred.git"
+  },
+  "author": "DrBracewell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DoctorBracewell/virtual-ripred/issues"
+  },
+  "homepage": "https://github.com/DoctorBracewell/virtual-ripred#readme"
 }

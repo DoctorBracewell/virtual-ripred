@@ -1,8 +1,16 @@
 // =-=-=-=-=-=-=-=-=-=-=-=- Requires + Assigns =-=-=-=-=-=-=-=-=-=-=-=- \\
-const content = require("./json/content.json"), prefix = content.misc.prefix, tokens = require("./json/tokens.json"), commands = require("./json/commands.json")
+const content = require("./json/content.json"), prefix = content.misc.prefix, tokens = require("./json/tokens.json"), commands = require("./json/commands.json"), fs = require("fs");
 const Discord = require('discord.js'), discordClient = new Discord.Client();
+discordClient.commands = new Discord.Collection();
+const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 const tumblr = require('tumblr.js'), tumblrClient = tumblr.createClient(tokens.tumblr);
 const axios = require("axios");
+
+for (const file of commandFiles) {
+	const command = require(`./commands/${file}`);
+	discordClient.commands.set(command.name, command);
+}
+
 // =-=-=-=-=-=-=-=-=-=-=-=- Helper Functions =-=-=-=-=-=-=-=-=-=-=-=- \\
 const randomBetween = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -15,57 +23,6 @@ const randomColour = () => {
   }
   return colour;
 }
-
-const helpString = () => {
-  let finishedString = "- ";
-  let arguments = [];
-  let list = [];
-  let commandCopy = commands.slice();
-
-  commandCopy.forEach(element => {
-    element.name = `- **vr!${element.name}** `;
-    list.push(element.name);
-
-    if (element.arguments != "") {
-      if (element.arguments.includes("/")) {
-        let seperateArguments = element.arguments.split("/");
-        seperateArguments.forEach(element => {
-          arguments = element.split(" ");
-          list[list.length - 1] += `[${arguments.join("/")}] `
-        })
-      } else {
-        arguments = element.arguments.split(" ");
-        list[list.length - 1] += `[${arguments.join("/")}] `
-      }
-    }
-
-    list[list.length - 1] += `= ${element.description}`;
-  })
-
-  finishedString = list.join("\n")
-  return finishedString;
-}
-
-// =-=-=-=-=-=-=-=-=-=-=-=- Embeds =-=-=-=-=-=-=-=-=-=-=-=- \\
-const help = new Discord.RichEmbed()
-  .setColor("#14851b")
-  .setAuthor("Virtual Ripred", "https://i.imgur.com/bpLpnfX.png")
-  .setTitle("**Hello!**")
-  .setDescription("I am Virtual Ripred, a custom discord bot coded by DrBracewell. I listen out for tumblr blog posts, give you random quotes and have a database of TUC information. Check below for some commands you can use.")
-  .addField("__Commands__", helpString())
-  .addField("\u200b", "**Have Fun!**")
-  .setFooter("I only work in #command-room")
-  .setTimestamp();
-
-const tumblrList = new Discord.RichEmbed()
-  .setColor("#2C4762")
-  .setAuthor("Virtual Ripred", "https://i.imgur.com/bpLpnfX.png")
-  .setThumbnail("https://is2-ssl.mzstatic.com/image/thumb/Purple114/v4/c0/4b/9a/c04b9a48-7cf1-83aa-83c3-284307c18bd3/TumblrIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/246x0w.jpg")
-  .setTitle("**Tumblr Blogs**")
-  .setDescription("Here is a list of the most active Tumblr Blogs:\n\n- **One Unexpected** (Andielion) **:** https://oneunexpected.tumblr.com\n- **Run Like the Motherfucking River** (DrBracewell) **:** https://tumblr.drbracewell.co.uk\n- **Bring Us Back Light** (AvianAnalyst) **:** https://bring-us-back-light.tumblr.com\n- **Underlined Chronicles** (Miapro) **:** https://underlinedchronicles.tumblr.com\n- **Remedy and Wrong Entwine** (Nellyfish) **:** https://the-what-but-not-the-when.tumblr.com\n")
-  .addField("\u200b", "**Have Fun!**")
-  .setFooter("I only work in #bot-channel")
-  .setTimestamp();
 
 // =-=-=-=-=-=-=-=-=-=-=-=- Startup =-=-=-=-=-=-=-=-=-=-=-=- \\
 // Set activity
@@ -387,7 +344,6 @@ discordClient.on('message', message => {
     }
   }
 
-
   switch (command) {
     // --- Quotes --- \\
     case "quote":
@@ -453,11 +409,11 @@ discordClient.on('message', message => {
 
     // --- Help --- \\
     case "help":
-      message.reply(help);
+      discordClient.commands.get('help').execute(message, args, Discord);
       break;
     // --- Tumblr --- \\
     case "tumblr":
-      message.reply(tumblrList);
+      discordClient.commands.get('tumblr').execute(message, args, Discord);
       break;
     // --- Map --- \\
     case "map":
