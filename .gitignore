@@ -1,5 +1,7 @@
-json/tokens.json
+src/json/tokens.json
+
 
 node_modules
+
 
 server-push
