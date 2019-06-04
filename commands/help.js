@@ -1,7 +1,6 @@
 module.exports = {
 	name: 'help',
-	description: 'Displays this message.',
-	execute(message, args, Discord) {
+	execute(message, args, Discord, randomBetween, randomColour) {
         const commands = require("../json/commands.json");
 		const helpString = () => {
             let finishedString = "- ";
@@ -43,6 +42,6 @@ module.exports = {
             .setFooter("I only work in #command-room")
             .setTimestamp();
         
-        message.channel.send(help);
-	},
+        message.reply(help);
+	}
 };

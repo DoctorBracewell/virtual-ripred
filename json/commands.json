@@ -10,7 +10,7 @@
         "arguments": ""
     },
     {
-        "name": "vine",
+        "name": "pickup",
         "description": "Provides a random TUC pickup line.",
         "arguments": ""
     },

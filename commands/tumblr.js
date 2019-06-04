@@ -1,7 +1,6 @@
 module.exports = {
 	name: 'tumblr',
-	description: 'Provides a list of the most active tumblr blogs.',
-	execute(message, args, Discord) {
+	execute(message, args, Discord, randomBetween, randomColour) {
         const tumblrList = new Discord.RichEmbed()
             .setColor("#2C4762")
             .setAuthor("Virtual Ripred", "https://i.imgur.com/bpLpnfX.png")
@@ -11,6 +10,6 @@ module.exports = {
             .addField("\u200b", "**Have Fun!**")
             .setFooter("I only work in #bot-channel")
             .setTimestamp();
-		message.channel.send(tumblrList);
-	},
+		message.reply(tumblrList);
+	}
 };
