@@ -12,12 +12,12 @@ module.exports = {
 	    commands.push(command);
     }
 
-    let finishedString = "- ";
-    let arguments = [];
-    let list = [];
-    let name = ""
-
 		const helpString = () => {
+      let finishedString = "- ";
+      let arguments = [];
+      let list = [];
+      let name = ""
+      
       for (var element of commands) {
         name = `- **vr!${element.name}** `;
         list.push(name);
