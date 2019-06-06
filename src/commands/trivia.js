@@ -1,5 +1,7 @@
 module.exports = {
-	name: 'trivia',
+  name: 'trivia',
+  description: "Starts a trivia contest.",
+  arguments: "tuc general/easy medium hard",
 	execute(message, args, Discord, randomBetween, randomColour) {
         const content = require("../json/content.json")
         const axios = require("axios");

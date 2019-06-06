@@ -1,5 +1,7 @@
 module.exports = {
-	name: 'profile',
+    name: 'profile',
+    description: "Provides the specified character profile",
+    arguments: "list (name)",
 	execute(message, args, Discord, randomBetween, randomColour) {
         const content = require("../json/content.json")
 

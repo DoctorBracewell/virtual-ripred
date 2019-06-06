@@ -1,5 +1,7 @@
 module.exports = {
-	name: 'quote',
+  name: 'quote',
+  description: "Provides a random quote from the specified character.",
+  arguments: "ripred gregor boots luxa general",
 	execute(message, args, Discord, randomBetween, randomColour) {
         const content = require("../json/content.json")
         switch (args[0]) {
