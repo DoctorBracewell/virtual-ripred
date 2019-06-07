@@ -2,7 +2,7 @@ module.exports = {
     name: 'tumblr',
     description: "Provides a list of the most active tumblr blogs.",
     arguments: "",
-	execute(message, args, Discord, randomBetween, randomColour) {
+	execute(message, args, Discord) {
         const tumblrList = new Discord.RichEmbed()
             .setColor("#2C4762")
             .setAuthor("Virtual Ripred", "https://i.imgur.com/bpLpnfX.png")

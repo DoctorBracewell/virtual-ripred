@@ -1,5 +1,6 @@
 // Setup \\
-const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json"), fs = require("fs");
+const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json"), 
+fs = require("fs"), random = require("drbracewell-random-tools");
 const tumblr = require('tumblr.js'), tumblrClient = tumblr.createClient(tokens.tumblr);
 
 const Discord = require('discord.js'), discordClient = new Discord.Client();
@@ -9,19 +10,6 @@ const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('
 for (const file of commandFiles) {
 	let command = require(`./commands/${file}`);
 	discordClient.commands.set(command.name, command);
-}
-
-// Helper Functions \\
-const randomBetween = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-const randomColour = () => {
-  let hexGenerator = "0123456789ABCDEF"
-  let colour = "";
-  for (i=0;i<6;i++) {
-    colour += hexGenerator[(Math.floor(Math.random() * 16))];
-  }
-  return colour;
 }
 
 // Set Activity \\
@@ -104,7 +92,7 @@ discordClient.on('message', message => {
   if (!discordClient.commands.has(command)) return;
 
   try {
-    discordClient.commands.get(command).execute(message, args, Discord, randomBetween, randomColour);
+    discordClient.commands.get(command).execute(message, args, Discord);
   } catch (error) {
     console.error(error);
     message.reply('there was an error trying to execute that command!');

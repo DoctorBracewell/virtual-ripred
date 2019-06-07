@@ -2,11 +2,11 @@ module.exports = {
     name: 'profile',
     description: "Provides the specified character profile",
     arguments: "list (name)",
-	execute(message, args, Discord, randomBetween, randomColour) {
-        const content = require("../json/content.json")
+	execute(message, args, Discord) {
+        const content = require("../json/content.json"), random = require("drbracewell-random-tools")
 
         let profile = new Discord.RichEmbed()
-            .setColor(randomColour())
+            .setColor(random.randomColour())
             .setAuthor("Virtual Ripred", "https://i.imgur.com/bpLpnfX.png")
             .setTimestamp();
 

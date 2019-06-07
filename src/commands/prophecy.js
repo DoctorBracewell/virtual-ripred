@@ -2,7 +2,7 @@ module.exports = {
   name: 'prophecy',
   description: "Provides the specified prophecy",
   arguments: "gray bane blood secrets time peacemaker",
-	execute(message, args, Discord, randomBetween, randomColour) {
+	execute(message, args, Discord) {
         const content = require("../json/content.json")
         switch (args[0]) {
             case "gray":

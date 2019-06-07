@@ -2,9 +2,8 @@ module.exports = {
   name: 'trivia',
   description: "Starts a trivia contest.",
   arguments: "tuc general/easy medium hard",
-	execute(message, args, Discord, randomBetween, randomColour) {
-        const content = require("../json/content.json")
-        const axios = require("axios");
+	execute(message, args, Discord) {
+        const content = require("../json/content.json"), random = require("drbracewell-random-tools"), axios = require("axios");
         if (args.length === 0) {
           message.channel.send("Please provide either which type of trivia contest, `tuc` or `general` and a difficulty, `easy`, `medium` or `hard`.");
           return;
@@ -103,7 +102,7 @@ module.exports = {
           // Question Template
           questionNumber++;
           questionEmbed = new Discord.RichEmbed()
-            .setColor(randomColour())
+            .setColor(random.randomColour())
             .setAuthor("Virtual Ripred", "https://i.imgur.com/bpLpnfX.png")
             .setTitle(`**Question ${questionNumber}**:`);
     
@@ -113,7 +112,7 @@ module.exports = {
           })
     
           // Duplicate question + inject
-          randomQuestion = questionsArray[randomBetween(0, questionsArray.length - 1)];
+          randomQuestion = questionsArray[random.randomBetween(0, questionsArray.length - 1)];
           randomChoices = randomQuestion.answers.slice().sort(() => Math.random() - 0.5);
           shuffledAnswer = randomChoices.indexOf(randomQuestion.answers[0]);
           shuffledAnswer === 0 ? shuffledAnswer = "🇦" : 

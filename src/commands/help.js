@@ -2,9 +2,8 @@ module.exports = {
   name: 'help',
   description: "Provides this message.",
   arguments: "",
-	execute(message, args, Discord, randomBetween, randomColour) {
-    const fs = require("fs"), commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-    console.log(commandFiles);
+	execute(message, args, Discord) {
+    const fs = require("fs"), commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js')), random = require("drbracewell-random-tools")
     let commands = [];
 
     for (const file of commandFiles) {
@@ -43,7 +42,7 @@ module.exports = {
     };
 
     const help = new Discord.RichEmbed()
-        .setColor(randomColour())
+        .setColor(random.randomColour())
         .setAuthor("Virtual Ripred", "https://i.imgur.com/bpLpnfX.png")
         .setTitle("**Hello!**")
         .setDescription("I am Virtual Ripred, a custom discord bot coded by DrBracewell. I listen out for tumblr blog posts, give you random quotes and have a database of TUC information. Check below for some commands you can use.")
