@@ -1,5 +1,5 @@
 // Setup \\
-const content = require("./json/content.json"), prefix = content.misc.prefix, tokens = require("./json/tokens.json"), fs = require("fs");
+const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json"), fs = require("fs");
 const tumblr = require('tumblr.js'), tumblrClient = tumblr.createClient(tokens.tumblr);
 
 const Discord = require('discord.js'), discordClient = new Discord.Client();
