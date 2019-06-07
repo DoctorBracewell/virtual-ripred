@@ -1,6 +1,6 @@
 // Setup \\
-const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json"), 
-fs = require("fs"), random = require("drbracewell-random-tools");
+const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json")
+const fs = require("fs"), random = require("drbracewell-random-tools");
 const tumblr = require('tumblr.js'), tumblrClient = tumblr.createClient(tokens.tumblr);
 
 const Discord = require('discord.js'), discordClient = new Discord.Client();
@@ -66,6 +66,10 @@ for (i = 0; i < content.misc.blogs.length; i++) {
 
 // =-=-=-=-=-=-=-=-=-=-=-=- Message Detection =-=-=-=-=-=-=-=-=-=-=-=- \\
 discordClient.on('message', message => {
+  // Test
+  if (message.content.toLowerCase() === `${prefix}ping`) {
+    message.channel.send("Pong!")
+  }
 
   // --- Human Comfort --- \\
   if ((message.content.toLowerCase() === "human comfort" || message.content.toLowerCase() === "(human comfort)") && !message.author.bot) {
