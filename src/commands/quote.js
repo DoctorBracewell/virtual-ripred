@@ -6,23 +6,23 @@ module.exports = {
         const content = require("../json/content.json"), random = require("drbracewell-random-tools")
         switch (args[0]) {
             case "ripred":
-              message.reply(`\`\`\`${content.quotes.ripred[random.randomBetween(0, content.quotes.ripred.length - 1)]}\`\`\``);
+              message.reply(`\`\`\`${random.randomFromArray(content.quotes.ripred)}\`\`\``);
               break;
     
             case "gregor":
-              message.reply(`\`\`\`${content.quotes.gregor[random.randomBetween(0, content.quotes.gregor.length - 1)]}\`\`\``);
+              message.reply(`\`\`\`${random.randomFromArray(content.quotes.gregor)}\`\`\``);
               break;
     
             case "boots":
-              message.reply(`\`\`\`${content.quotes.boots[random.randomBetween(0, content.quotes.boots.length - 1)]}\`\`\``);
+              message.reply(`\`\`\`${random.randomFromArray(content.quotes.boots)}\`\`\``);
               break;
             
             case "luxa":
-              message.reply(`\`\`\`${content.quotes.luxa[random.randomBetween(0, content.quotes.luxa.length - 1)]}\`\`\``);
+              message.reply(`\`\`\`${random.randomFromArray(content.quotes.luxa)}\`\`\``);
               break;
             
             case "general":
-              message.reply(`\`\`\`${content.quotes.general[random.randomBetween(0, content.quotes.general.length - 1)]}\`\`\``);
+              message.reply(`\`\`\`${random.randomFromArray(content.quotes.general)}\`\`\``);
               break;
             
             default:

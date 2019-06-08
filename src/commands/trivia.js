@@ -112,7 +112,7 @@ module.exports = {
           })
     
           // Duplicate question + inject
-          randomQuestion = questionsArray[random.randomBetween(0, questionsArray.length - 1)];
+          randomQuestion = random.randomFromArray(questionsArray);
           randomChoices = randomQuestion.answers.slice().sort(() => Math.random() - 0.5);
           shuffledAnswer = randomChoices.indexOf(randomQuestion.answers[0]);
           shuffledAnswer === 0 ? shuffledAnswer = "🇦" : 

@@ -1,6 +1,6 @@
 // Setup \\
 const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json")
-const fs = require("fs"), random = require("drbracewell-random-tools");
+const fs = require("fs")
 const tumblr = require('tumblr.js'), tumblrClient = tumblr.createClient(tokens.tumblr);
 
 const Discord = require('discord.js'), discordClient = new Discord.Client();
@@ -90,7 +90,7 @@ discordClient.on('message', message => {
   }
 
   // Check if command + split into args
-  if (!message.content.startsWith(prefix) || message.author.bot || !content.misc.channels.includes(message.channel)) return;
+  if (!message.content.startsWith(prefix) || message.author.bot || !content.misc.channels.includes(message.channel.id)) return;
   let args = message.content.toLowerCase().slice(prefix.length).split(/ +/);
   let command = args.shift().toLowerCase();
   if (!discordClient.commands.has(command)) return;
