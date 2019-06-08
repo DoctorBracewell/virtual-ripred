@@ -90,7 +90,7 @@ discordClient.on('message', message => {
   }
 
   // Check if command + split into args
-  if (!message.content.startsWith(prefix) || message.author.bot || content.misc.channels.includes(message.channel)) return;
+  if (!message.content.startsWith(prefix) || message.author.bot || !content.misc.channels.includes(message.channel)) return;
   let args = message.content.toLowerCase().slice(prefix.length).split(/ +/);
   let command = args.shift().toLowerCase();
   if (!discordClient.commands.has(command)) return;
