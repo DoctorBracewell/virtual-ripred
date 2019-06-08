@@ -27,6 +27,8 @@ module.exports = {
             message.reply(profile);
         } 
         catch (error) {
+            if (args[0] !== "list") message.reply("Oops, I don't recognise that character. Check below for a list of all our current characters: ");
+
             function characters() {
                 let finishedString = "";
                 content.profiles.forEach(element => {
@@ -34,10 +36,8 @@ module.exports = {
                 })
                 return finishedString;
             }
-            if (args[0] !== "list") {
-                message.reply("Oops, I don't recognise that character. Check below for a list of all our current characters: ")
-            }
-            message.reply("```\n" + characters() + "```");
+
+            message.channel.send("```\n" + characters() + "```");
         }
 	}
 };
