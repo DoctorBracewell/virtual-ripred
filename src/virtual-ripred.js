@@ -18,52 +18,6 @@ discordClient.on('ready', () => {
   discordClient.user.setActivity('>> vr!help <<');
 });
 
-// =-=-=-=-=-=-=-=-=-=-=-=- Blog Listening =-=-=-=-=-=-=-=-=-=-=-=- \\
-let listenForPosts = blog => {
-  // Get OG post number
-  tumblrClient.blogPosts((blog + '.tumblr.com'), function(err, resp) {
-    if (err === null) {
-      let postCount = resp.total_posts;
-      let listenShort = () => {
-        // Target every 2m for new posts
-        tumblrClient.blogPosts((blog + '.tumblr.com'), function(err1, resp1) {
-          if (err1 === null) {
-            let newPostCount = resp1.total_posts;
-            if (newPostCount > postCount) {
-              // If not reblogged send to channel.
-              if (resp1.posts[0].source_url === undefined || resp1.posts[0].reblog.tree_html === "") {
-                discordClient.channels.get("555129709495582745").send(
-                  `<:tumblr:555483626175987712>  **New Tumblr Post**\n\n__${blog.toUpperCase()}__ has created a post! Check it out here:\n\n${resp1.posts[0].post_url}`
-                  );
-                discordClient.channels.get("565841408146145280").send(
-                  `<:tumblr:565841585300832256>  **New Tumblr Post**\n\n__${blog.toUpperCase()}__ has created a post! Check it out here:\n\n${resp1.posts[0].post_url}`
-                  );
-                postCount++;
-              } else {
-                postCount++;
-              }
-            }
-          } else {
-            if (typeof blogLoop != 'undefined') {
-              clearInterval(blogLoop);
-            }
-          }
-        });
-      };
-      // Call once + start interval.
-      listenShort();
-      let blogLoop = setInterval(function(){listenShort()}, 120000);
-    } else {
-        clearInterval(blogLoop);
-    };
-  });
-};
-
-// Do for all blogs.
-for (i = 0; i < content.misc.blogs.length; i++) {
-  listenForPosts(content.misc.blogs[i]);
-};
-
 // =-=-=-=-=-=-=-=-=-=-=-=- Message Detection =-=-=-=-=-=-=-=-=-=-=-=- \\
 discordClient.on('message', message => {
   // Test
