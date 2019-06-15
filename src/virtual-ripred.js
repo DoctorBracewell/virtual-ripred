@@ -1,11 +1,11 @@
 // Setup \\
-const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json")
-const fs = require("fs")
+const content = require("./json/content.json"), config = require("./json/config.json"), prefix = config.prefix, tokens = require("./json/tokens.json");
+const fs = require("fs");
 const tumblr = require('tumblr.js'), tumblrClient = tumblr.createClient(tokens.tumblr);
 
 const Discord = require('discord.js'), discordClient = new Discord.Client();
 discordClient.commands = new Discord.Collection();
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandFiles = fs.readdirSync('./src/commands')
 
 for (const file of commandFiles) {
 	let command = require(`./commands/${file}`);
