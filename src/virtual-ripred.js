@@ -37,7 +37,7 @@ discordClient.on('message', message => {
   }
 
   // --- Weef Dad Day --- \\
-  for (let i of content.misc.wDD.length) {
+  for (let i of content.misc.wDD) {
     if (message.content.includes(content.misc.wDD[i]) && !message.author.bot) {
       message.channel.send("**Happy Weef Dad Day!**");
     }

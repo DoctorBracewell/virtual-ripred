@@ -193,7 +193,7 @@ module.exports = {
                     // Next question
                     setTimeout(() => {
                       questions();
-                    }, 3000)  
+                    }, 3000)
                   }
                 })
               })

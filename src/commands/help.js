@@ -3,7 +3,7 @@ module.exports = {
   description: "Provides this message.",
   arguments: "",
 	execute(message, args, Discord) {
-    const fs = require("fs"), commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js')), random = require("drbracewell-random-tools")
+    const fs = require("fs"), commandFiles = fs.readdirSync('./src/commands').filter(file => file.endsWith('.js')), random = require("drbracewell-random-tools")
     let commands = [];
 
     for (const file of commandFiles) {
