@@ -39,7 +39,7 @@ module.exports = {
         let collector = message.channel.createMessageCollector(filter, { time: 60000 });
 
         collector.on("collect", message => {
-          if (message.content === word) {
+          if (message.content.toLowerCase() === word.toLowerCase()) {
             message.channel.send(`<@${message.author.id}> correctly unscrambled the word!`);
             finished = true;
             collector.stop();
