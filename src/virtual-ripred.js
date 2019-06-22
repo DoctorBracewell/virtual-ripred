@@ -23,6 +23,7 @@ discordClient.on('message', message => {
   // Test
   if (message.content.toLowerCase() === `${prefix}ping`) {
     message.channel.send("Pong!")
+    message.channel.send(`${message.author}`)
   }
 
   // --- Human Comfort --- \\

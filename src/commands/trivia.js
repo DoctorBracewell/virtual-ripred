@@ -3,7 +3,7 @@ module.exports = {
   description: "Starts a trivia contest.",
   arguments: "tuc general/easy medium hard",
 	execute(message, args, Discord) {
-        const content = require("../json/content.json"), random = require("drbracewell-random-tools"), axios = require("axios");
+        const content = require("../json/content.json"), random = require("drbracewell-random-tools"), fetch = require("node-fetch")
         if (args.length === 0) {
           message.channel.send("Please provide either which type of trivia contest, `tuc` or `general` and a difficulty, `easy`, `medium` or `hard`.");
           return;
@@ -24,6 +24,7 @@ module.exports = {
             message.channel.send("That is not a valid contest difficulty, use `easy`, `medium` or `hard`.");
             return;
           }
+
           let url = "https://opentdb.com/api.php?amount=10&type=multiple&encode=url3986";
           if(args.length === 2) {
             switch (args[1]) {
@@ -39,25 +40,28 @@ module.exports = {
             }
           }
             // Get api trivia
-            axios.get(url)
-              .then(function (res) {
-                questionsArray = res.data.results.slice();
-                questionsArray.forEach(element => {
-                  element.question = decodeURIComponent(element.question);
-                  element.incorrect_answers.unshift(element.correct_answer);
-                  for (i = 0; i < element.incorrect_answers.length; i++) {
-                    element.incorrect_answers[i] = decodeURIComponent(element.incorrect_answers[i]);
-                  };
-                  let obj = element;
-                  obj.answers = obj.incorrect_answers;
-                  delete obj.incorrect_answers;
-                })
-              })
-              .catch(function (error) {
-                console.log(error);
-                message.channel.send("Something went when trying to recieve the questions from the API, please try again.");
-                return;
-              });
+          fetch(url)
+            .then(res => res.json())
+            .then(res => {
+              questionsArray = res.results.slice();
+
+              for (let element of questionsArray) {
+                element.question = decodeURIComponent(element.question);
+                element.incorrect_answers.unshift(element.correct_answer);
+                for (i = 0; i < element.incorrect_answers.length; i++) {
+                  element.incorrect_answers[i] = decodeURIComponent(element.incorrect_answers[i]);
+                };
+                let obj = element;
+                obj.answers = obj.incorrect_answers;
+                delete obj.incorrect_answers;
+              }
+
+            })
+            .catch(function (error) {
+              console.log(error);
+              message.channel.send("Something went when trying to recieve the questions from the API, please try again.");
+              return;
+            });
         }
         
         // incorrect/correct answers

@@ -4,9 +4,9 @@
   "description": "Source code for custom discord.js bot Virtual Ripred",
   "main": "virtualRipred.js",
   "dependencies": {
-    "axios": "^0.19.0",
     "discord.js": "^11.5.1",
     "drbracewell-random-tools": "^1.2.2",
+    "node-fetch": "^2.6.0",
     "random-word": "^2.0.0",
     "tumblr.js": "^2.0.2"
   },
