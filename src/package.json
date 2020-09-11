@@ -6,7 +6,7 @@
   "dependencies": {
     "discord.js": "^11.5.1",
     "drbracewell-random-tools": "^1.2.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "random-word": "^2.0.0",
     "tumblr.js": "^2.0.2"
   },
